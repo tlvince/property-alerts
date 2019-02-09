@@ -1,0 +1,19 @@
+{
+  "name": "property-alerts",
+  "version": "1.0.0",
+  "description": "Be notified when new properties are advertised",
+  "main": "index.js",
+  "scripts": {
+    "start": "./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mailgun-es6": "1.1.4",
+    "simple-get-promise": "1.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "6.2.0"
+  }
+}
