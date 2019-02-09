@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const email = require('./lib/email')
 const fetch = require('./lib/fetch')
 const parse = require('./lib/parse')
