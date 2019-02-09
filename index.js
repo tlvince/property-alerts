@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 
+const save = require('./lib/save')
 const email = require('./lib/email')
 const fetch = require('./lib/fetch')
 const parse = require('./lib/parse')
 const render = require('./lib/render')
 
 const maybeEmail = (properties) => {
-  if (!properties) {
-    return Promise.resolve()
+  if (!(properties && properties.length)) {
+    return
   }
   const html = render(properties)
-  return email(html)
+  email(html).then(() => save(properties))
 }
 
 
